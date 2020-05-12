@@ -1,0 +1,39 @@
+body{
+    background-image: url('/ImersaoCss/3322781.jpg');
+    background-size: auto 160vh;
+    font-family: Arial;
+    height: 100vh;
+}
+
+.menu{
+    background-color: whitesmoke;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.site-title,
+.site-subtitle{
+    text-align: center;
+}
+
+.site-subtitle{
+    font-style: italic;
+}
