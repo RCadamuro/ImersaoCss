@@ -1,5 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
-    background-image: url('./3322781.jpg');
+    background-image: url('/img/3322781.jpg');
     background-size: auto 160vh;
     font-family: Arial;
     height: 100vh;
