@@ -9,8 +9,15 @@ body{
 
 a{
     text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
 }
 
 a:hover{
     text-decoration: underline;
+}
+
+.menu li{
+    list-style: none;
 }
