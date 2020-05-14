@@ -134,6 +134,16 @@ a:hover{
     }
 }
 
+@media (min-width: 1200px){
+    .projetos .grid {
+        align-content: center;
+        grid-template-columns: repeat(3, 260px);
+        height: calc(100vh);
+        justify-content: center; 
+    }
+}
+
+
 
 .projetos figure{
     color: whitesmoke; 
