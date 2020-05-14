@@ -4,30 +4,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
 body{
     background-image: url('../img/fundo3.jpg');
-    background-size: auto 130vh;
+    background-size: auto 125vh;
     font-family: 'Source Code Pro', monospace;
     height: 100vh;
+    font-size: 12px;
 }
 
 /*Se a Tela Tiver pelo menos 400 px vai carregar estes Estilos*/
 @media (min-width: 400px){
     body{
         font-size: 14px;
-
     }
 }
 
 @media (min-width: 600px){
     body{
-        font-size: 18px;
-        
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 18px;  
     }
 }
+
+/* breakpoint */
+@media (min-width: 1200px) {
+    body {
+     
+      font-size: 20px;
+    }
+  }
 
 header{
     height: 100vh;
@@ -37,8 +47,6 @@ header{
 }
 
 .menu{
-    
-    background-color: whitesmoke;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -47,26 +55,27 @@ header{
 .menu ul{
     display: flex;
     justify-content: space-around;
+    margin-block-start: 0.8em;
 }
 
 .menu li {
-    list-style: none;
-}
+    list-style: none;}
 
 .menu a {
     display: block;
-    padding: 15px; 
+    background-color: whitesmoke;
+    border-radius: 10px;  
+    padding: 10px 20px; 
 }
 
 a{
     color: black;
     font-weight: bold;
     text-decoration: none;
-    
 }
 
 a:hover{
-    text-decoration: underline;
+    font-size: 1.5em;
 }
 
 .site-title,
@@ -75,20 +84,79 @@ a:hover{
     text-align: center;
 }
 .site-title{
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Roboto', sans-serif;
 }
 .site-subtitle{
-    font-style: italic;
+    /* font-style: italic; */
+    padding: 4px;
     font-family: 'Press Start 2P', cursive;
 }
 
+.projetos {
+    background-color: rgba(66, 65, 65, 0.993);
+    padding: 2em;
+    /* height: 100vh; */
+    min-height: 100vh
+}
+
+.contato{
+    padding: 2em;
+    /* height: 100vh; */
+    min-height: 100vh
+}
+
+.contato,
 .projetos h2{
-    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 2em;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 1em;
+}
+
+.projetos .grid {
+    display: grid;
+    gap: 2em; 
+}
+
+@media (min-width: 560px){
+    .projetos .grid {
+        grid-template-columns: 240px; 
+    }
+}
+
+@media (min-width: 880px){
+    .projetos .grid {
+        align-content: center;
+        grid-template-columns: repeat(3, 260px);
+        height: calc(100vh - 8em - 77px);
+        justify-content: center; 
+    }
+}
+
+@media (min-width: 1500px){
+    .projetos .grid {
+        align-content: center;
+        grid-template-columns: repeat(3, 260px);
+        height: calc(100vh - 8em - 386px);
+        justify-content: center; 
+    }
+}
+
+
+.projetos figure{
+    color: whitesmoke; 
+    text-align: center;
 }
 
 .img-portfolio{
-    width: 180px;
-    height: 180px;;
+    width: 220px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 40px;
 }
 
+.img-portfolio:hover {
+    transform: scale(1.2) rotate(-2deg);
+  }
+  
