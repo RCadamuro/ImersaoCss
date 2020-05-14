@@ -129,16 +129,7 @@ a:hover{
     .projetos .grid {
         align-content: center;
         grid-template-columns: repeat(3, 260px);
-        height: calc(100vh - 8em - 77px);
-        justify-content: center; 
-    }
-}
-
-@media (min-width: 1500px){
-    .projetos .grid {
-        align-content: center;
-        grid-template-columns: repeat(3, 260px);
-        height: calc(100vh - 8em - 386px);
+        height: calc(100vh - 8em - 36px);
         justify-content: center; 
     }
 }
